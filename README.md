@@ -23,3 +23,6 @@ It can be done by the Eclipse :
 
 the server implementation is on the folder src/main/java
 templates implementation is on the folder src/main/resources/templates
+
+
+to test the solution you can do it by browser : http://localhost:8080/Converter
