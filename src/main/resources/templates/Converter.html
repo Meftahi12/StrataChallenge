@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h3>ROMAN/NUMERAL Converter</h3>
+    <form action="#" th:action="@{/Converter}" th:object="${toConvert}" method="post">
+		 <p>conversion type: <select th:field="*{conversionType}">
+		  <option value="1">numeral to roman</option>
+		  <option value="0">roman to numeral</option>
+		</select></p>
+        <p>value to convert: <input type="text" th:field="*{toConvert}" /></p>
+        <p><input type="submit" value="Convert" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
